@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Checks directory.json before it's signed: every entry has what the CMS
+# reads, a plain key, an owner/name repository, and a 40-character commit
+# that is the commit its version's tag (v<version>) points at on GitHub.
+#
+#   bin/check            # needs `gh` signed in, or GH_TOKEN
+require "json"
+
+REQUIRED = %w[key kind name description repo version commit].freeze
+entries = JSON.parse(File.read(File.expand_path("../directory.json", __dir__))).fetch("plugins")
+problems = []
+
+entries.each do |entry|
+  label = entry["key"] || entry.inspect
+  REQUIRED.each { problems << "#{label}: no #{it}" if entry[it].to_s.empty? }
+  problems << "#{label}: key isn't a plain lowercase name" unless entry["key"].to_s.match?(/\A[a-z][a-z0-9_]*\z/)
+  problems << "#{label}: kind is plugin or theme" unless %w[plugin theme].include?(entry["kind"])
+  problems << "#{label}: repo is owner/name" unless entry["repo"].to_s.match?(%r{\A[\w.-]+/[\w.-]+\z})
+  problems << "#{label}: commit is a full SHA" unless entry["commit"].to_s.match?(/\A\h{40}\z/)
+  next unless ENV["SKIP_GITHUB"].to_s.empty?
+
+  tagged = `gh api repos/#{entry["repo"]}/commits/v#{entry["version"]} -q .sha 2>/dev/null`.strip
+  problems << "#{label}: v#{entry["version"]} is #{tagged.empty? ? "not a tag" : tagged} on GitHub, not #{entry["commit"]}" if tagged != entry["commit"]
+end
+problems << "keys repeat" if entries.map { it["key"] }.uniq.size != entries.size
+
+abort problems.map { "✗ #{it}" }.join("\n") if problems.any?
+puts "✓ #{entries.size} entries"

@@ -1,0 +1,28 @@
+{
+  "plugins": [
+    {
+      "key": "forms",
+      "kind": "plugin",
+      "name": "Forms",
+      "description": "Forms, their emails, the public submissions endpoint, the Submissions inbox, and choices from a collection.",
+      "repo": "Martin-Business-Consultants/cms-forms",
+      "author": "Martin Business Consultants",
+      "homepage": "https://github.com/Martin-Business-Consultants/cms-forms",
+      "version": "1.1.1",
+      "commit": "a544b3444273dec28d80865f68f8c159cc9da909",
+      "requires": ">= 1.0"
+    },
+    {
+      "key": "wordpress_import",
+      "kind": "plugin",
+      "name": "WordPress Import",
+      "description": "Bring a WordPress site over from its export file: pages, posts, images, Yoast SEO and redirects from the old addresses.",
+      "repo": "Martin-Business-Consultants/cms-wordpress-import",
+      "author": "Martin Business Consultants",
+      "homepage": "https://github.com/Martin-Business-Consultants/cms-wordpress-import",
+      "version": "0.1.0",
+      "commit": "c652ac70043335a85c91e5564d82a7bccc6a6592",
+      "requires": ">= 1.12"
+    }
+  ]
+}

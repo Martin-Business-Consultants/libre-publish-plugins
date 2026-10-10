@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Signs directory.json with the directory's Ed25519 key, into
+# directory.json.sig (base64), which the CMS checks against the public key
+# it ships with (PluginDirectory::PUBLIC_KEY). The key comes from
+# DIRECTORY_SIGNING_KEY (its PEM, as the workflow has it) or a file:
+#
+#   bin/sign ~/.config/libre-publish/plugin-directory-signing.pem
+require "openssl"
+
+pem = ENV["DIRECTORY_SIGNING_KEY"].to_s.empty? ? File.read(ARGV.fetch(0)) : ENV["DIRECTORY_SIGNING_KEY"]
+key = OpenSSL::PKey.read(pem)
+root = File.expand_path("..", __dir__)
+body = File.binread(File.join(root, "directory.json"))
+File.write(File.join(root, "directory.json.sig"), [key.sign(nil, body)].pack("m0"))
+puts "Signed directory.json"
