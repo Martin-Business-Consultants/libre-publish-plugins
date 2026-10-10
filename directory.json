@@ -1,6 +1,18 @@
 {
   "plugins": [
     {
+      "key": "approvals",
+      "kind": "plugin",
+      "name": "Approvals",
+      "description": "An agent's content changes (API, cms CLI, MCP) wait for a person: live beside proposed, edit, then approve or reject.",
+      "repo": "Martin-Business-Consultants/cms-approvals",
+      "author": "Martin Business Consultants",
+      "homepage": "https://github.com/Martin-Business-Consultants/cms-approvals",
+      "version": "1.1.0",
+      "commit": "3f3aec41069ef9f90eb9f70b43c6b00f49bac2cb",
+      "requires": ">= 1.9"
+    },
+    {
       "key": "forms",
       "kind": "plugin",
       "name": "Forms",
