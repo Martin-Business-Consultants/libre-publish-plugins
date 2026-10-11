@@ -47,6 +47,18 @@
       "version": "0.1.0",
       "commit": "c652ac70043335a85c91e5564d82a7bccc6a6592",
       "requires": ">= 1.12"
+    },
+    {
+      "key": "workflow",
+      "kind": "plugin",
+      "name": "Workflow",
+      "description": "Review for people's changes: ask someone to look at a page or an entry, approve it or ask for changes, and comment, each told by email. Publishing can wait for an approval.",
+      "repo": "Martin-Business-Consultants/cms-workflow",
+      "author": "Martin Business Consultants",
+      "homepage": "https://github.com/Martin-Business-Consultants/cms-workflow",
+      "version": "1.0.0",
+      "commit": "af7f10330c351c75d7e408719730d22919154f94",
+      "requires": ">= 1.27"
     }
   ]
 }
