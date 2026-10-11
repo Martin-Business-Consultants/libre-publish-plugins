@@ -20,8 +20,8 @@
       "repo": "Martin-Business-Consultants/cms-forms",
       "author": "Martin Business Consultants",
       "homepage": "https://github.com/Martin-Business-Consultants/cms-forms",
-      "version": "1.5.1",
-      "commit": "820a6ce141f33cb7becb68d2ffdb623f41c1209f",
+      "version": "1.6.0",
+      "commit": "28295eeb74dc5b000cf10ef18d6eae9ddbd81a04",
       "requires": ">= 1.0"
     },
     {
