@@ -8,8 +8,8 @@
       "repo": "Martin-Business-Consultants/cms-approvals",
       "author": "Martin Business Consultants",
       "homepage": "https://github.com/Martin-Business-Consultants/cms-approvals",
-      "version": "1.3.1",
-      "commit": "103d12fa7b51a0ba56f3770831cd1c5922affd6a",
+      "version": "1.3.2",
+      "commit": "753a719f6aa293ae6ee16003503161f1bdb7fa5d",
       "requires": ">= 1.30"
     },
     {
