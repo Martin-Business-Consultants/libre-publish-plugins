@@ -13,6 +13,18 @@
       "requires": ">= 1.9"
     },
     {
+      "key": "consent",
+      "kind": "plugin",
+      "name": "Consent",
+      "description": "A cookie consent banner on the website: the Scripts global's analytics and marketing scripts run only once a visitor agrees.",
+      "repo": "Martin-Business-Consultants/cms-consent",
+      "author": "Martin Business Consultants",
+      "homepage": "https://github.com/Martin-Business-Consultants/cms-consent",
+      "version": "1.0.0",
+      "commit": "6510d0c229600fa012250cc94b92b4220f69bfaa",
+      "requires": ">= 1.27"
+    },
+    {
       "key": "forms",
       "kind": "plugin",
       "name": "Forms",
