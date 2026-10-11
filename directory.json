@@ -8,9 +8,9 @@
       "repo": "Martin-Business-Consultants/cms-approvals",
       "author": "Martin Business Consultants",
       "homepage": "https://github.com/Martin-Business-Consultants/cms-approvals",
-      "version": "1.2.0",
-      "commit": "a8d086f6fee20888ccc5f2a2f314fed20b171a8b",
-      "requires": ">= 1.9"
+      "version": "1.3.0",
+      "commit": "8a3465b71ba57cbf683f437095a57f209e7bcea4",
+      "requires": ">= 1.30"
     },
     {
       "key": "consent",
@@ -20,9 +20,9 @@
       "repo": "Martin-Business-Consultants/cms-consent",
       "author": "Martin Business Consultants",
       "homepage": "https://github.com/Martin-Business-Consultants/cms-consent",
-      "version": "1.0.0",
-      "commit": "6510d0c229600fa012250cc94b92b4220f69bfaa",
-      "requires": ">= 1.27"
+      "version": "1.1.0",
+      "commit": "6f2e8e74dc46d58396326ee846252221bd2bc739",
+      "requires": ">= 1.30"
     },
     {
       "key": "forms",
@@ -32,9 +32,9 @@
       "repo": "Martin-Business-Consultants/cms-forms",
       "author": "Martin Business Consultants",
       "homepage": "https://github.com/Martin-Business-Consultants/cms-forms",
-      "version": "1.6.0",
-      "commit": "28295eeb74dc5b000cf10ef18d6eae9ddbd81a04",
-      "requires": ">= 1.0"
+      "version": "1.7.0",
+      "commit": "82836846bfeae33b922d2e367221aa3109207443",
+      "requires": ">= 1.30"
     },
     {
       "key": "wordpress_import",
@@ -44,9 +44,9 @@
       "repo": "Martin-Business-Consultants/cms-wordpress-import",
       "author": "Martin Business Consultants",
       "homepage": "https://github.com/Martin-Business-Consultants/cms-wordpress-import",
-      "version": "0.1.0",
-      "commit": "c652ac70043335a85c91e5564d82a7bccc6a6592",
-      "requires": ">= 1.12"
+      "version": "0.2.0",
+      "commit": "fb9509f93c74f0e49cb22ab5511725c23c90c7a8",
+      "requires": ">= 1.30"
     },
     {
       "key": "workflow",
@@ -56,9 +56,9 @@
       "repo": "Martin-Business-Consultants/cms-workflow",
       "author": "Martin Business Consultants",
       "homepage": "https://github.com/Martin-Business-Consultants/cms-workflow",
-      "version": "1.0.0",
-      "commit": "af7f10330c351c75d7e408719730d22919154f94",
-      "requires": ">= 1.27"
+      "version": "1.1.0",
+      "commit": "cbd6b717b7ec6c5593c9c842dc7c225e7c4feccf",
+      "requires": ">= 1.30"
     }
   ]
 }
