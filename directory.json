@@ -32,9 +32,9 @@
       "repo": "Martin-Business-Consultants/cms-forms",
       "author": "Martin Business Consultants",
       "homepage": "https://github.com/Martin-Business-Consultants/cms-forms",
-      "version": "1.7.1",
-      "commit": "cfdb9f520f46648f48a4be12a6f339bf282d569b",
-      "requires": ">= 1.30"
+      "version": "1.7.2",
+      "commit": "540bf3418677a41ef2bf63fc5fa82cff6ab0019d",
+      "requires": ">= 1.32"
     },
     {
       "key": "wordpress_import",
